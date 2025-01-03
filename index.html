@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>临霜科技有限公司</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link" data-section="home">首页</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">关于我</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">联系方式</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="sun">🌞</span>
+                <span class="moon">🌙</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 首页部分 -->
+        <section id="home" class="page-section active">
+            <!-- 轮播图部分 -->
+            <div class="slideshow">
+                <div class="slide fade">
+                    <img src="sc/bg1.jpg" alt="幻灯片1">
+                    <div class="slide-content">
+                        <h1>欢迎来到我的网站</h1>
+                        <p>让我们一起探索更多可能</p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="sc/bg2.jpg" alt="幻灯片2">
+                    <div class="slide-content">
+                        <h1>创意无限</h1>
+                        <p>分享我的故事与经历</p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="sc/bg3.jpg" alt="幻灯片3">
+                    <div class="slide-content">
+                        <h1>专业技能</h1>
+                        <p>展示我的专业领域</p>
+                    </div>
+                </div>
+                
+                <button class="slide-btn prev">&#10094;</button>
+                <button class="slide-btn next">&#10095;</button>
+                
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!-- 网盘工具部分 -->
+            <div class="cloud-drive-tools">
+                <h2>网盘工具</h2>
+                <div class="drive-container">
+                    <!-- 迅雷网盘 -->
+                    <div class="drive-item">
+                        <img src="sc/迅雷.png" alt="迅雷网盘" class="drive-icon">
+                        <h3>迅雷网盘</h3>
+                        <span class="version-tag">v1.2.3</span>
+                        <div class="drive-buttons">
+                            <a href="https://pan.xunlei.com" target="_blank" class="drive-btn">打开网盘</a>
+                            <button class="drive-btn download-btn" data-type="xunlei">下载客户端</button>
+                        </div>
+                    </div>
+
+                    <!-- 阿里云盘 -->
+                    <div class="drive-item">
+                        <img src="sc/阿里云盘.png" alt="阿里云盘" class="drive-icon">
+                        <h3>阿里云盘</h3>
+                        <span class="version-tag">v1.2.3</span>
+                        <div class="drive-buttons">
+                            <a href="https://www.aliyundrive.com/drive" target="_blank" class="drive-btn">打开网盘</a>
+                            <button class="drive-btn download-btn" data-type="aliyun">下载客户端</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 百度网盘 -->
+                    <div class="drive-item">
+                        <img src="sc/百度网盘.png" alt="百度网盘" class="drive-icon">
+                        <h3>百度网盘</h3>
+                        <span class="version-tag">v1.2.3</span>
+                        <div class="drive-buttons">
+                            <a href="https://pan.baidu.com" target="_blank" class="drive-btn">打开网盘</a>
+                            <button class="drive-btn download-btn" data-type="baidu">下载客户端</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我部分 -->
+        <section id="about" class="page-section">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="social-links">
+                    <!-- 抖音 -->
+                    <a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank" class="social-link">
+                        <div class="platform-icon douyin">
+                            <img src="sc/抖音.png" alt="抖音">
+                        </div>
+                        <span>抖音</span>
+                    </a>
+                    
+                    <!-- 快手 -->
+                    <a href="https://www.kuaishou.com/profile/3xkii87tdjine29" target="_blank" class="social-link">
+                        <div class="platform-icon kuaishou">
+                            <img src="sc/快手.png" alt="快手">
+                        </div>
+                        <span>快手</span>
+                    </a>
+                    
+                    <!-- 小红书 -->
+                    <a href="https://www.xiaohongshu.com/user/profile/633e81da000000001802d609" target="_blank" class="social-link">
+                        <div class="platform-icon xiaohongshu">
+                            <img src="sc/小红书.png" alt="小红书">
+                        </div>
+                        <span>小红书</span>
+                    </a>
+                    
+                    <!-- 哔哩哔哩 -->
+                    <a href="https://space.bilibili.com/1699387576" target="_blank" class="social-link">
+                        <div class="platform-icon bilibili">
+                            <img src="sc/哔哩哔哩.png" alt="哔哩哔哩">
+                        </div>
+                        <span>哔哩哔哩</span>
+                    </a>
+                    
+                    <!-- 微博 -->
+                    <a href="https://weibo.com/u/7818032621" target="_blank" class="social-link">
+                        <div class="platform-icon weibo">
+                            <img src="sc/微博.png" alt="微博">
+                        </div>
+                        <span>微博</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式部分 -->
+        <section id="contact" class="page-section">
+            <h2>联系方式</h2>
+            <div class="contact-container">
+                <!-- 微信二维码 -->
+                <div class="qr-code-container">
+                    <div class="qr-code">
+                        <img src="sc/wx1.png" alt="微信二维码" class="qr-trigger" data-large-img="sc/wx0.png">
+                        <p>微信</p>
+                    </div>
+                </div>
+                
+                <!-- 中间的联系信息 -->
+                <div class="contact-info">
+                    <p class="copyable" data-copy="comer.ki@foxmail.com">
+                        邮箱：<span>comer.ki@foxmail.com</span>
+                        <span class="copy-tooltip">点击复制</span>
+                    </p>
+                    <p class="copyable" data-copy="17357213682">
+                        电话：<span>+86 173 5721 3682</span>
+                        <span class="copy-tooltip">点击复制</span>
+                    </p>
+                </div>
+                
+                <!-- QQ二维码 -->
+                <div class="qr-code-container">
+                    <div class="qr-code">
+                        <img src="sc/qq1 (1).jpg" alt="QQ二维码" class="qr-trigger" data-large-img="sc/qq0.jpg">
+                        <p>QQ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 linshuang. 保留所有权利。</p>
+    </footer>
+
+    <!-- 二维码弹出层 -->
+    <div id="qr-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <!-- 下载弹窗 -->
+    <div id="download-modal" class="download-modal">
+        <div class="download-content">
+            <span class="download-close">&times;</span>
+            <h3>选择下载版本</h3>
+            <div class="download-options">
+                <!-- 下载选项保持不变 -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 导航链接点击处理
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const sectionId = link.getAttribute('data-section');
+                document.querySelectorAll('.page-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+
+        // 主题切换功能
+        const themeToggle = document.getElementById('theme-toggle');
+        
+        // 检查本地存储中的主题设置
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        
+        // 检查系统主题偏好
+        if (!localStorage.getItem('theme')) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+        
+        // 主题切换事件处理
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+        
+        // 监听系统主题变化
+        if (window.matchMedia) {
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                if (!localStorage.getItem('theme')) {
+                    document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+                }
+            });
+        }
+
+        // 轮播图功能
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+        
+        // 自动轮播
+        let slideInterval = setInterval(nextSlide, 5000);
+        
+        // 按钮控制
+        document.querySelector('.next').addEventListener('click', () => {
+            clearInterval(slideInterval);
+            nextSlide();
+            slideInterval = setInterval(nextSlide, 5000);
+        });
+        
+        document.querySelector('.prev').addEventListener('click', () => {
+            clearInterval(slideInterval);
+            prevSlide();
+            slideInterval = setInterval(nextSlide, 5000);
+        });
+        
+        // 圆点控制
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                clearInterval(slideInterval);
+                showSlide(index);
+                slideInterval = setInterval(nextSlide, 5000);
+            });
+        });
+        
+        // 初始化显示第一张幻灯片
+        showSlide(0);
+
+        // 复制功能
+        document.querySelectorAll('.copyable').forEach(element => {
+            element.addEventListener('click', async function() {
+                const textToCopy = this.getAttribute('data-copy');
+                const tooltip = this.querySelector('.copy-tooltip');
+                
+                try {
+                    await navigator.clipboard.writeText(textToCopy);
+                    tooltip.textContent = '已复制！';
+                    tooltip.classList.add('show');
+                    
+                    setTimeout(() => {
+                        tooltip.textContent = '点击复制';
+                        tooltip.classList.remove('show');
+                    }, 2000);
+                    
+                } catch (err) {
+                    console.error('复制失败:', err);
+                    tooltip.textContent = '复制失败';
+                    tooltip.classList.add('show');
+                    
+                    setTimeout(() => {
+                        tooltip.textContent = '点击复制';
+                        tooltip.classList.remove('show');
+                    }, 2000);
+                }
+            });
+            
+            // 鼠标悬停效果
+            element.addEventListener('mouseenter', function() {
+                const tooltip = this.querySelector('.copy-tooltip');
+                tooltip.classList.add('show');
+            });
+            
+            element.addEventListener('mouseleave', function() {
+                const tooltip = this.querySelector('.copy-tooltip');
+                if (tooltip.textContent === '点击复制') {
+                    tooltip.classList.remove('show');
+                }
+            });
+        });
+
+        // 二维码弹窗功能
+        const modal = document.getElementById('qr-modal');
+        const modalImg = document.getElementById('modal-img');
+        const closeBtn = document.querySelector('.modal-close');
+        
+        document.querySelectorAll('.qr-trigger').forEach(trigger => {
+            trigger.addEventListener('click', function() {
+                modal.classList.add('active');
+                modalImg.src = this.getAttribute('data-large-img');
+            });
+        });
+        
+        closeBtn.addEventListener('click', function() {
+            modal.classList.remove('active');
+        });
+        
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html> 
